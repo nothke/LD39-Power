@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Item : Interactable
 {
-
+    [System.Serializable]
     public class SelectionSettings
     {
         public Vector3 customHandPosition = new Vector3(0.15f, -0.15f, 0.1f);

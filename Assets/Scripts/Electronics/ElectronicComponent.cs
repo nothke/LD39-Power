@@ -167,6 +167,8 @@ public abstract class ElectronicComponent : MonoBehaviour
     {
         foreach (var c in connected)
         {
+            if (c == null) continue;
+
             Gizmos.color = powered ? Color.green : Color.gray;
             Gizmos.DrawLine(c.transform.position, transform.position);
         }

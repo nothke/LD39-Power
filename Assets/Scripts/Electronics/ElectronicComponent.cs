@@ -10,7 +10,13 @@ public abstract class ElectronicComponent : MonoBehaviour
 
     void Start()
     {
-        OnShutDown();
+        InitPowerState();
+    }
+
+    public void InitPowerState()
+    {
+        if (powered) OnPowered();
+        else OnShutDown();
     }
 
     public void Power(bool p)

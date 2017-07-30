@@ -10,7 +10,8 @@ public class SimpleCharacterController : MonoBehaviour
 
     void Start()
     {
-
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     public float walkSpeed = 6;
